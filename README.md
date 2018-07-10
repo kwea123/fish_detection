@@ -17,7 +17,7 @@ protoc object_detection/protos/*.proto --python_out=. # protoc needs to be versi
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim # needs to be executed each time in a new shell
 ```
 Normally, `protoc 3` should be installed when you build the docker.
-If not, refer to [this page](https://gist.github.com/sofyanhadia/37787e5ed098c97919b8c593f0ec44d8).
+If not, refer to [this page](https://gist.github.com/sofyanhadia/37787e5ed098c97919b8c593f0ec44d8) and install it (`protoc 2` **doesn't work**).
 
 If you forget to run them, you could get `ImportError: No module named deployment` or `ImportError: No module named object_detection` when training.
 
