@@ -6,6 +6,11 @@ Among all images, there are `24403` individual fish bounding boxes according to 
 
 ## Tensorflow Object Detection API Setup
 
+Clone Tensorflow Object Detection github :
+```
+git clone https://github.com/tensorflow/models/tree/master/research/object_detection
+```
+
 Execute the following commands from `models/research/` :
 ```
 protoc object_detection/protos/*.proto --python_out=. # protoc needs to be version 3
