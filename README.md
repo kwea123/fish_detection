@@ -195,6 +195,8 @@ Execute the cells from the top to the bottom, skipping the "Download model" cell
 
 You can see your detection result, which should be comparable to mine at the beginning of this readme!
 
+Finally, as for the speed, it runs at 40-50ms per image on one 1080Ti (after warmed up), which is sufficiently fast for me.
+
 # Errors I encountered
 
 To make your debug faster, I list some of the errors I met and the solutions during training :
