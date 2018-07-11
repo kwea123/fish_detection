@@ -21,9 +21,9 @@ Otherwise, an environment with all dependencies also works.
 
 ## Check and extract data
 
-To check how the data format looks like, see [read_test.ipynb](read_test.ipynb).
+To check how the data format looks like, see [read_test.ipynb](https://nbviewer.jupyter.org/github/kwea123/fish_detection/blob/master/read_test.ipynb).
 
-Since we only want to train on fish (and related species), use [read_fish.ipynb](read_fish.ipynb) to see how much data we actually have.
+Since we only want to train on fish (and related species), use [read_fish.ipynb](https://nbviewer.jupyter.org/github/kwea123/fish_detection/blob/master/read_fish.ipynb) to see how much data we actually have.
 
 Among all images, there are `24403` individual fish bounding boxes training data.
 
