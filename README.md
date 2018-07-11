@@ -146,13 +146,24 @@ Your model is on the way!
 
 You can run `tensorboard --logdir=${YOUR MODEL'S OUTPUT DIR}` to check if the loss actually decreases.
 
-## 7. Export the graph
+## 7. See validation set results
+
+From `models/research/`, run
+```
+python object_detection/eval.py --logtostderr --checkpoint_dir=${YOUR MODEL'S OUTPUT DIR} --pipeline_config_path=${YOUR CONFIG's PATH} --eval_dir=${YOUR EVAL'S OUTUPT DIR} 
+```
+
+In case a `Syntax Error` appears on `print`, modify `models/research/object_detection/utils/object_detection_evaluation.py#L842` by adding parentheses for these 3 `print`s.
+
+Then, run `tensorboard --logdir=${YOUR EVAL'S OUTUPT DIR}`. You should see pictures like the following :
+
+## 8. Export the graph
 
 Once your model is trained, you need to export a `.pb` graph, to use for inference.
 
 From `models/research/`, run
 ```
-python object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix fish_model/model.ckpt-XXXX --output_directory fish_inference_graph
+python object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path ${YOUR CONFIG's PATH} --trained_checkpoint_prefix ${YOUR MODEL'S OUTPUT DIR}/model.ckpt-XXXX --output_directory fish_inference_graph
 ```
 where `XXXX` is the last checkpoint step (the largest number in that folder).
 
