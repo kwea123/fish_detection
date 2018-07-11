@@ -205,7 +205,7 @@ Finally, as for the speed, it runs at 40-50ms per image on one 1080Ti (after war
 
 # Errors I encountered
 
-To make your debug faster, I list some of the errors I met and the solutions during training :
+To make your debug faster, I list some of the errors I met during training and the solutions :
 
 *  [ValueError: Tried to convert 't' to a tensor and failed. Error: Argument must be a dense tensor: range(0, 3) - got shape [3], but wanted []](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/issues/11)
 
