@@ -195,7 +195,7 @@ Execute the cells from the top to the bottom, skipping the "Download model" cell
 
 You can see your detection result, which should be comparable to mine at the beginning of this readme!
 
-My trained model is available at `fish_detection_graph_public/`. You only need this graph and the [label map](data/fish_label_map.pbtxt) to be able to reproduce my result.
+My trained model is available [here](fish_detection_graph_public/). You only need this graph and the [label map](data/fish_label_map.pbtxt) to be able to reproduce my result.
 
 Finally, as for the speed, it runs at 40-50ms per image on one 1080Ti (after warmed up), which is sufficiently fast for me.
 
