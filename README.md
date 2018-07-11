@@ -5,6 +5,9 @@ This repository contains a tutorial of fish detection using Open Images Dataset 
 Here is the final result (using googled images):
 ![result](images/result.png)
 
+
+For people who just want to use my pretrained weights, you only have to do [1. Setup Tensorflow Object Detection API](https://github.com/kwea123/fish_detection#1-setup-tensorflow-object-detection-api) and [9. Run inference](https://github.com/kwea123/fish_detection/blob/master/README.md#9-run-inference).
+
 # Prepare data
 
 The [Open Images Dataset](https://storage.googleapis.com/openimages/web/index.html) is downloadable from [cvdfoundation](https://github.com/cvdfoundation/open-images-dataset#download-images-with-bounding-boxes-annotations), of size 513GB. It took around 13 hours with 10MB/s network speed.
@@ -54,8 +57,6 @@ Normally, `protoc` version 3 should be installed when you build the docker.
 If not, refer to [this page](https://gist.github.com/sofyanhadia/37787e5ed098c97919b8c593f0ec44d8) and install it (`protoc` version 2 **doesn't work**).
 
 If you forget to run them, you could get `ImportError: No module named deployment` or `ImportError: No module named object_detection` when training.
-
-For people who just want to use my pretrained weights, go to [9. Run inference](https://github.com/kwea123/fish_detection/blob/master/README.md#9-run-inference).
 
 ## 2. Prepare TFRecord
 
