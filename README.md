@@ -136,8 +136,10 @@ python object_detection/train.py --logtostderr --train_dir=${YOUR MODEL'S OUTPUT
 
 You will get the following training info :
 ```
+...
 INFO:tensorflow:global step 31303: loss = 0.1623 (0.109 sec/step)
 INFO:tensorflow:global step 31304: loss = 0.2365 (0.111 sec/step)
+...
 ```
 
 Your model is on the way!
