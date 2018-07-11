@@ -149,6 +149,8 @@ You can run `tensorboard --logdir=${YOUR MODEL'S OUTPUT DIR}` to check if the lo
 You should see an image like the following :
 ![loss](images/loss.png)
 
+**Important notice** : You need to constantly keep track of the loss. It will decrease at the beginning and at some time starts to re-increase. You had better *stop* training at this point (early-stopping). In my case, training for 200k steps (as default) gives me bad results (many missed detections), whereas stopping at around 50k steps (where the loss is minimal) gives me lots of true positives.
+
 ## 7. See validation set results
 
 From `models/research/`, run
