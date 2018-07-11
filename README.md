@@ -55,6 +55,8 @@ If not, refer to [this page](https://gist.github.com/sofyanhadia/37787e5ed098c97
 
 If you forget to run them, you could get `ImportError: No module named deployment` or `ImportError: No module named object_detection` when training.
 
+For people who just want to use my pretrained weights, go to `9. Run inference`.
+
 ## 2. Prepare TFRecord
 
 In order to train a tensorflow model, we need to prepare the data in its acceptable form, which are `tfrecord`s.
@@ -180,7 +182,7 @@ python object_detection/export_inference_graph.py --input_type image_tensor --pi
 ```
 where `XXXX` is the last checkpoint step (the largest number in that folder).
 
-## 8. Run inference
+## 9. Run inference
 
 First, find some images with objects you want to detect inside (in my case fish). Download them to `models/research/object_detection/test_images` with format `imageX.jpg`, where X is a number, starting from `3` (since there are already two test images by default).
 
