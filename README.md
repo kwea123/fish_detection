@@ -195,6 +195,8 @@ Execute the cells from the top to the bottom, skipping the "Download model" cell
 
 You can see your detection result, which should be comparable to mine at the beginning of this readme!
 
+More results are available at [results.ipynb](https://nbviewer.jupyter.org/github/kwea123/fish_detection/blob/master/results.ipynb). The detection threshold is 0.1 and the output numbers are the detection time (in seconds) for each image.
+
 My trained model is available [here](fish_detection_graph_public/). You only need this graph and the [label map](data/fish_label_map.pbtxt) to be able to reproduce my result.
 
 Finally, as for the speed, it runs at 40-50ms per image on one 1080Ti (after warmed up), which is sufficiently fast for me.
