@@ -85,7 +85,7 @@ See [Issue](https://github.com/tensorflow/models/issues/3196) for more informati
 
 Pick the model's config from `/models/research/object_detection/samples/configs`. Duplicate it somewhere.
 
-**Note** : you should pick the config with the **same** name as your model.
+**Note** : you must pick the config with the **same** name as your model.
 
 ## 6. Modify the config
 
@@ -146,6 +146,9 @@ Your model is on the way!
 
 You can run `tensorboard --logdir=${YOUR MODEL'S OUTPUT DIR}` to check if the loss actually decreases.
 
+You should see an image like the following :
+![loss](images/loss.png)
+
 ## 7. See validation set results
 
 From `models/research/`, run
@@ -155,7 +158,10 @@ python object_detection/eval.py --logtostderr --checkpoint_dir=${YOUR MODEL'S OU
 
 In case a `Syntax Error` appears on `print`, modify `models/research/object_detection/utils/object_detection_evaluation.py#L842` by adding parentheses for these 3 `print`s.
 
-Then, run `tensorboard --logdir=${YOUR EVAL'S OUTUPT DIR}`. You should see pictures like the following :
+Then, run `tensorboard --logdir=${YOUR EVAL'S OUTUPT DIR}`. 
+
+You should see some validation images like the following :
+![eval](images/eval.png)
 
 ## 8. Export the graph
 
