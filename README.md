@@ -45,8 +45,8 @@ Execute the following commands from `models/research/` :
 protoc object_detection/protos/*.proto --python_out=. # protoc needs to be version 3
 export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim # needs to be executed each time in a new shell
 ```
-Normally, `protoc 3` should be installed when you build the docker.
-If not, refer to [this page](https://gist.github.com/sofyanhadia/37787e5ed098c97919b8c593f0ec44d8) and install it (`protoc 2` **doesn't work**).
+Normally, `protoc` version 3 should be installed when you build the docker.
+If not, refer to [this page](https://gist.github.com/sofyanhadia/37787e5ed098c97919b8c593f0ec44d8) and install it (`protoc` version 2 **doesn't work**).
 
 If you forget to run them, you could get `ImportError: No module named deployment` or `ImportError: No module named object_detection` when training.
 
@@ -54,7 +54,7 @@ If you forget to run them, you could get `ImportError: No module named deploymen
 
 In order to train a tensorflow model, we need to prepare the data in its acceptable form, which are `tfrecord`s.
 
-Following the official [tutorial](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md), I created [create_tfrecords.py](create_tfrecords.py) which converts the `.csv` files created in [read_fish.ipynb](read_fish.ipynb) into '.record' files.
+Following the official [tutorial](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md), I created [create_tfrecords.py](create_tfrecords.py) which converts the `.csv` files created in [read_fish.ipynb](https://nbviewer.jupyter.org/github/kwea123/fish_detection/blob/master/read_fish.ipynb) into '.record' files.
 
 Run
 ```
