@@ -136,15 +136,8 @@ python object_detection/train.py --logtostderr --train_dir=${YOUR MODEL'S OUTPUT
 
 You will get the following training info :
 ```
-INFO:tensorflow:global step 1758: loss = 6.4747 (0.338 sec/step)
-INFO:tensorflow:global step 1758: loss = 6.4747 (0.338 sec/step)
-2018-07-10 14:57:50.831791: W tensorflow/core/framework/allocator.cc:101] Allocation of 226492416 exceeds 10% of system memory.
-INFO:tensorflow:global step 1759: loss = 5.3687 (0.348 sec/step)
-INFO:tensorflow:global step 1759: loss = 5.3687 (0.348 sec/step)
-2018-07-10 14:57:51.179552: W tensorflow/core/framework/allocator.cc:101] Allocation of 301989888 exceeds 10% of system memory.
-INFO:tensorflow:global step 1760: loss = 5.8365 (0.305 sec/step)
-INFO:tensorflow:global step 1760: loss = 5.8365 (0.305 sec/step)
-2018-07-10 14:57:51.488248: W tensorflow/core/framework/allocator.cc:101] Allocation of 301989888 exceeds 10% of system memory.
+INFO:tensorflow:global step 31303: loss = 0.1623 (0.109 sec/step)
+INFO:tensorflow:global step 31304: loss = 0.2365 (0.111 sec/step)
 ```
 
 Your model is on the way!
