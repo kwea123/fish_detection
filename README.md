@@ -5,7 +5,7 @@ This repository contains a tutorial of fish detection using Open Images Dataset 
 Here is the final result (using googled images):
 ![result](images/result.png)
 
-# Data preparation
+# Prepare data
 
 The [Open Images Dataset](https://storage.googleapis.com/openimages/web/index.html) is downloadable from [cvdfoundation](https://github.com/cvdfoundation/open-images-dataset#download-images-with-bounding-boxes-annotations), of size 513GB. It took around 13 hours with 10MB/s network speed.
 
