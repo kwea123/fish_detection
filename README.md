@@ -1,8 +1,13 @@
 # fish_detection
 
+This repository contains a tutorial of fish detection using Open Images Dataset and Tensorflow Object Detection.
+
+Here is the final result (using googled images):
+![result](images/result.png)
+
 # Data preparation
 
-the Open Images Dataset is downloadable from [cvdfoundation](https://github.com/cvdfoundation/open-images-dataset#download-images-with-bounding-boxes-annotations), of size 513GB. It took around 13 hours with 10MB/s network speed.
+the [Open Images Dataset](https://storage.googleapis.com/openimages/web/index.html) is downloadable from [cvdfoundation](https://github.com/cvdfoundation/open-images-dataset#download-images-with-bounding-boxes-annotations), of size 513GB. It took around 13 hours with 10MB/s network speed.
 
 Download all the images along with the annotations.
 
@@ -188,7 +193,7 @@ Modify the "Detection" cell, set `TEST_IMAGE_PATHS` correctly (increase the `ran
 
 Execute the cells from the top to the bottom, skipping the "Download model" cell.
 
-You should see your detection result!
+You can see your detection result, which should be comparable to mine at the beginning of this readme!
 
 # Errors I encountered
 
