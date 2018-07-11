@@ -7,7 +7,7 @@ Here is the final result (using googled images):
 
 # Data preparation
 
-the [Open Images Dataset](https://storage.googleapis.com/openimages/web/index.html) is downloadable from [cvdfoundation](https://github.com/cvdfoundation/open-images-dataset#download-images-with-bounding-boxes-annotations), of size 513GB. It took around 13 hours with 10MB/s network speed.
+The [Open Images Dataset](https://storage.googleapis.com/openimages/web/index.html) is downloadable from [cvdfoundation](https://github.com/cvdfoundation/open-images-dataset#download-images-with-bounding-boxes-annotations), of size 513GB. It took around 13 hours with 10MB/s network speed.
 
 Download all the images along with the annotations.
 
