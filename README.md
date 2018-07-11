@@ -18,6 +18,8 @@ Clone this repository with `git clone https://github.com/kwea123/fish_detection.
 
 # Setup the environment
 
+The OS is ubuntu-16.04.
+
 A `Dockerfile` with all dependencies is provided. You can build it with
 ```
 nvidia-docker build $CONTAINER:$TAG ./
