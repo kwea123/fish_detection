@@ -148,3 +148,46 @@ INFO:tensorflow:global step 1760: loss = 5.8365 (0.305 sec/step)
 ```
 
 Your model is on the way!
+
+You can run `tensorboard --logdir=${YOUR MODEL'S OUTPUT DIR}` to check if the loss actually decreases.
+
+## 7. Export the graph
+
+Once your model is trained, you need to export a `.pb` graph, to use for inference.
+
+From `models/research/`, run
+```
+python object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path faster_rcnn_inception_v2_pets.config --trained_checkpoint_prefix fish_model/model.ckpt-XXXX --output_directory fish_inference_graph
+```
+where `XXXX` is the last checkpoint step (the largest number in that folder).
+
+## 8. Run inference
+
+First, find some images with objects you want to detect inside (in my case fish). Download them to `models/research/object_detection/test_images` with format `imageX.jpg`, where X is a number, starting from `3` (since there are already two test images by default).
+
+Move the folder containing the `.pb` graph to `/models/research/object_detection/`, and copy the label map to `/models/research/object_detection/data/`.
+
+Open `models/research/object_detection/object_detection_tutorial.ipynb`.
+
+Modify the "Model preparation" cell where the `MODEL_NAME`, `PATH_TO_LABELS`, and `NUM_CLASSES` are set (set to your values).
+Modify the "Detection" cell, set `TEST_IMAGE_PATHS` correctly (increase the `range`).
+
+Execute the cells from the top to the bottom, skipping the "Download model" cell.
+
+You should see your detection result!
+
+# Errors I encountered
+
+To make your debug faster, I list some of the errors I met and the solutions during training :
+
+*  [ValueError: Tried to convert 't' to a tensor and failed. Error: Argument must be a dense tensor: range(0, 3) - got shape [3], but wanted []](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10/issues/11)
+
+*  [train.py error: InvalidArgumentError (see above for traceback): assertion failed: [Groundtruth boxes and labels have incompatible shapes!] [Condition x == y did not hold element-wise:] [x (Loss/BoxClassifierLoss/strided_slice_1:0) = ] ](https://github.com/tensorflow/models/issues/2737)
+
+* [Tensorflow Failed to create Session](https://github.com/tensorflow/tensorflow/issues/9549)
+
+# Other useful tutorials
+
+Here are the tutorials I followed :
+
+[How To Train an Object Detection Classifier Using TensorFlow 1.5 (GPU) on Windows 10](https://www.youtube.com/watch?v=Rgpfk6eYxJA)
