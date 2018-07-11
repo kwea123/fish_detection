@@ -55,7 +55,7 @@ If not, refer to [this page](https://gist.github.com/sofyanhadia/37787e5ed098c97
 
 If you forget to run them, you could get `ImportError: No module named deployment` or `ImportError: No module named object_detection` when training.
 
-For people who just want to use my pretrained weights, go to `9. Run inference`.
+For people who just want to use my pretrained weights, go to [9. Run inference](https://github.com/kwea123/fish_detection/blob/master/README.md#9-run-inference).
 
 ## 2. Prepare TFRecord
 
