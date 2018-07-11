@@ -54,7 +54,7 @@ If you forget to run them, you could get `ImportError: No module named deploymen
 
 In order to train a tensorflow model, we need to prepare the data in its acceptable form, which are `tfrecord`s.
 
-Following the official [tutorial](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md), I created [create_tfrecords.py](create_tfrecords.py) which converts the `.csv` files created in [read_fish.ipynb](https://nbviewer.jupyter.org/github/kwea123/fish_detection/blob/master/read_fish.ipynb) into '.record' files.
+Following the official [tutorial](https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/using_your_own_dataset.md), I created [create_tfrecords.py](create_tfrecords.py) which converts the `.csv` files created in [read_fish.ipynb](https://nbviewer.jupyter.org/github/kwea123/fish_detection/blob/master/read_fish.ipynb) into `.record` files.
 
 Run
 ```
