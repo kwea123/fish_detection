@@ -183,7 +183,7 @@ Once your model is trained, you need to export a `.pb` graph, to use for inferen
 
 From `models/research/`, run
 ```
-python object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path ${YOUR CONFIG's PATH} --trained_checkpoint_prefix ${YOUR MODEL'S OUTPUT DIR}/model.ckpt-XXXX --output_directory fish_inference_graph
+python object_detection/export_inference_graph.py --input_type image_tensor --pipeline_config_path ${YOUR CONFIG's PATH} --trained_checkpoint_prefix ${YOUR MODEL'S OUTPUT DIR}/model.ckpt-XXXX --output_directory ${YOUR GRAPH's PATH}
 ```
 where `XXXX` is the last checkpoint step (the largest number in that folder).
 
