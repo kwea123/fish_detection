@@ -39,7 +39,7 @@ Since we only want to train on fish (and related species), use [read_fish.ipynb]
 
 Among all images, there are `24403` individual fish bounding boxes training data.
 
-Also, we save the minimum required data (ImageId and bounding box coordinates) into 'fish_train.csv' and 'fish_val.csv' (you can use the test set too).
+Also, we save the minimum required data (ImageId and bounding box coordinates) into `fish_train.csv` and `fish_val.csv` (you can use the test set too).
 
 # Choose an object detection model
 
