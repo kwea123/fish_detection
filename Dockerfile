@@ -10,15 +10,9 @@ RUN mv protoc3/include/* /usr/local/include/
 
 # install pycocotool for evaluation
 RUN apt-get update
-RUN apt install -y git
-RUN git clone https://github.com/pdollar/coco.git
-RUN cd coco/PythonAPI
-RUN make
-RUN make install
-RUN python setup.py install
-
-RUN pip3 install keras pillow opencv-python==3.2.0.8 h5py
+RUN apt install -y git python3-tk
+RUN pip3 install cython pillow opencv-python==3.2.0.8
+RUN pip3 install git+https://github.com/philferriere/cocoapi.git#subdirectory=PythonAPI
 
 
 
-WORKDIR "/root"
