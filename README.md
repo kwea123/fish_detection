@@ -22,7 +22,7 @@ The OS is ubuntu-16.04.
 
 A `Dockerfile` with all dependencies is provided. You can build it with
 ```
-docker build $CONTAINER:$TAG ./
+docker build -t $CONTAINER:$TAG ./
 ```
 
 This may take a while on the first build.
