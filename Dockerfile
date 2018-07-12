@@ -9,7 +9,8 @@ RUN mv protoc3/bin/* /usr/local/bin/
 RUN mv protoc3/include/* /usr/local/include/
 
 # install pycocotool for evaluation
-RUN apt install git
+RUN apt-get update
+RUN apt install -y git
 RUN git clone https://github.com/pdollar/coco.git
 RUN cd coco/PythonAPI
 RUN make
