@@ -5,6 +5,9 @@ This repository contains a tutorial of fish detection using Open Images Dataset 
 Here is the final result (using googled images):
 ![result](images/result.png)
 
+And a youtube video :
+
+[![thumbnail](images/thumbnail.png)](https://www.youtube.com/watch?v=KkJQ6qUoEPk)
 
 For people who just want to use my pretrained weights, you only have to do [1. Setup Tensorflow Object Detection API](https://github.com/kwea123/fish_detection#1-setup-tensorflow-object-detection-api) and [9. Run inference](https://github.com/kwea123/fish_detection/blob/master/README.md#9-run-inference).
 
