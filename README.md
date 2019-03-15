@@ -145,7 +145,7 @@ You can start training now!
 
 From `models/research/`, run
 ```
-python object_detection/train.py --logtostderr --train_dir=${YOUR MODEL'S OUTPUT DIR} --pipeline_config_path=${YOUR CONFIG's PATH} 
+python object_detection/legacy/train.py --logtostderr --train_dir=${YOUR MODEL'S OUTPUT DIR} --pipeline_config_path=${YOUR CONFIG's PATH} 
 ```
 **Note** : The paths should be **absolute**!
 
@@ -170,7 +170,7 @@ You should see an image like the following :
 
 From `models/research/`, run
 ```
-python object_detection/eval.py --logtostderr --checkpoint_dir=${YOUR MODEL'S OUTPUT DIR} --pipeline_config_path=${YOUR CONFIG's PATH} --eval_dir=${YOUR EVAL'S OUTUPT DIR} 
+python object_detection/legacy/eval.py --logtostderr --checkpoint_dir=${YOUR MODEL'S OUTPUT DIR} --pipeline_config_path=${YOUR CONFIG's PATH} --eval_dir=${YOUR EVAL'S OUTUPT DIR} 
 ```
 
 In case a `Syntax Error` appears on `print`, modify `models/research/object_detection/utils/object_detection_evaluation.py#L842` by adding parentheses for these 3 `print`s.
@@ -207,7 +207,7 @@ You can see your detection result, which should be comparable to mine at the beg
 
 More results are available at [results.ipynb](https://nbviewer.jupyter.org/github/kwea123/fish_detection/blob/master/results.ipynb). The detection threshold is 0.1 and the output numbers are the detection time (in seconds) for each image.
 
-My trained model is available [here](fish_detection_graph/). You only need this graph and the [label map](data/fish_label_map.pbtxt) to be able to reproduce my result.
+My trained model is available [here](fish_inception_v2_graph/). You only need this graph and the [label map](data/fish_label_map.pbtxt) to be able to reproduce my result.
 
 Finally, as for the speed, it runs at 40-50ms per image on one 1080Ti (after warmed up), which is sufficiently fast for me.
 
