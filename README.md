@@ -52,7 +52,7 @@ I choose [Tensorflow Object Detection](https://github.com/tensorflow/models/tree
 
 Clone Tensorflow Object Detection github :
 ```
-git clone https://github.com/tensorflow/models/tree/master/research/object_detection
+git clone https://github.com/tensorflow/models.git
 ```
 
 Execute the following commands from `models/research/` :
